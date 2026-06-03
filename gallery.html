@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея — Мой проект</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-images"></i> Фотогалерея</h1>
+            <p class="subtitle">Коллекция изображений по теме: <span class="theme-name">Мобильные технологии</span></p>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-grid">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="gallery.html" class="nav-link active"><i class="fas fa-camera"></i> Галерея</a></li>
+                <li><a href="contacts.html" class="nav-link"><i class="fas fa-info"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i>
+                    Изображений: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active">
+                    <i class="fas fa-th"></i> Сетка
+                </button>
+                <button id="list-view" class="view-btn">
+                    <i class="fas fa-list"></i> Список
+                </button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="smartphone">Смартфоны</button>
+                <button class="filter-btn" data-filter="tablet">Планшеты</button>
+                <button class="filter-btn" data-filter="accessories">Аксессуары</button>
+            </div>
+        </div>
+
+        <div class="gallery-grid" id="image-gallery">
+            <!-- Карточка 1 -->
+            <article class="image-card" data-category="smartphone">
+                <div class="card-image">
+                    <img src="https://istudio-msk.ru/upload/dev2fun.imagecompress/webp/iblock/b0f/p3ryuic4cjr55xtb337b112kjppaaern.webp" alt="Современный смартфон с большим экраном" class="gallery-img" loading="lazy" width="400" height="350">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="1">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Флагманский смартфон 2025</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 september 2025</p>
+                    <p class="image-description">Устройство с OLED-дисплеем, камерой 108 МП и поддержкой 5G.  IOS</p>
+                    <div class="image-tags">
+                        <span class="tag">смартфон</span>
+                        <span class="tag">технологии</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="smartphone">
+                <div class="card-image">
+                    <img src="https://i.ebayimg.com/images/g/mbIAAOSwjOlnc7hK/s-l1600.jpg" alt="Современный смартфон с большим экраном" class="gallery-img" loading="lazy" width="400" height="350">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="1">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Флагманский смартфон 2024</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 10 апреля 2024</p>
+                    <p class="image-description">Устройство с OLED-дисплеем, камерой 108 МП и поддержкой 5G.</p>
+                    <div class="image-tags">
+                        <span class="tag">смартфон</span>
+                        <span class="tag">технологии</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="tablet">
+                <div class="card-image">
+                    <img src="https://ir.ozone.ru/s3/multimedia-1-6/7359684162.jpg" alt="Планшет с клавиатурой и стилусом" class="gallery-img" loading="lazy" width="500" height="350">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Планшет для работы</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 5 апреля 2024</p>
+                    <p class="image-description">Мощный планшет с поддержкой стилуса и съёмной клавиатурой.</p>
+                    <div class="image-tags">
+                        <span class="tag">планшет</span>
+                        <span class="tag">офис</span>
+                    </div>
+                </div>
+            </article>
+
+              <article class="image-card" data-category="tablet">
+                <div class="card-image">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/16441222/2a00000196e94efb475e8e0a61ebf9d2022b/orig" alt="Планшет с клавиатурой и стилусом" class="gallery-img" loading="lazy" width="450" height="400">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Планшет для работы</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 30 афгуста 2025</p>
+                    <p class="image-description">Мощный планшет 144Ггц  стилус,клавиатура и тачпад.</p>
+                    <div class="image-tags">
+                        <span class="tag">планшет</span>
+                        <span class="tag">офис</span>
+                    </div>
+                </div>
+            </article>
+
+             <article class="image-card" data-category="accessories">
+                <div class="card-image">
+                    <img src="https://avatars.mds.yandex.net/get-marketpic/12491966/picc010ac85973683d91b5b6d157daed24c/orig" alt="Планшет с клавиатурой и стилусом" class="gallery-img" loading="lazy" width="350" height="300">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Внешний аккумулятор </h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 september 2020</p>
+                    <p class="image-description">акумулятор для телефона,с magsaff и анимацией зарядки для iphone</p>
+                    <div class="image-tags">
+                        <span class="tag">аксисуары</span>
+                        <span class="tag">с собой</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="accessories">
+                <div class="card-image">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/5098271/2a0000018dc2f95057658903aece922bc896/orig" alt="Планшет с клавиатурой и стилусом" class="gallery-img" loading="lazy" width="350" height="300">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">без проводная зарядка magsaff </h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 september 2018</p>
+                    <p class="image-description">без проводная зарядка для iphone и ipad c анимацией</p>
+                    <div class="image-tags">
+                        <span class="tag">аксисуары</span>
+                        <span class="tag">дом</span>
+                    </div>
+                </div>
+            </article>
+          
+        </div>
+
+        <aside class="gallery-info">
+            <h3><i class="fas fa-lightbulb"></i> Интересный факт</h3>
+            <p>Первый мобильный телефон (Motorola DynaTAC 8000X) весил около 1 кг и стоил $3995 в 1983 году.</p>
+        </aside>
+    </main>
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2024</span> Мой проект. Все права защищены.</p>
+            <p class="js-status">JavaScript загружен и работает!</p>
+        </div>
+    </footer>
+
+    <script src="script99.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Навигация -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li class="active"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="info-card">
+            <h2>Контактная информация</h2>
+            <div class="card">
+                <p><strong>ФИО:</strong> Архипов Дмитрий Алексеевич</p>
+                <p><strong>Email:</strong> <a href="https://google.com" target="_blank">argipovdima149@gmail.com</a></p>
+                <p><strong>Специализация:</strong> Веб-разработка</p>
+                <p><strong>Социальные сети:</strong>
+                    <a href="https://vk.com" target="_blank">VK</a> |
+                    <a href="https://t.me" target="_blank">Telegram</a> |
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                </p>
+                <p><strong>Местоположение:</strong> Москва, Россия</p>
+            </div>
+        </section>
+
+        <section class="feedback-form">
+            <h2>Форма обратной связи</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Имя <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Тема</label>
+                    <select id="subject" name="subject">
+                        <option value="">Выберите тему</option>
+                        <option value="question">Вопрос</option>
+                        <option value="offer">Предложение</option>
+                        <option value="complaint">Жалоба</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение <span class="required">*</span></label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        Согласен с обработкой персональных данных <span class="required">*</span>
+                    </label>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <section class="additional-info">
+            <h2>Дополнительная информация</h2>
+            <div class="info-block">
+                <h3>График работы</h3>
+                <p>Пн-Пт: 9:15 - 18:00</p>
+                <p>Сб-Вс: выходной</p>
+
+                <h3>FAQ</h3>
+                <ul>
+                    <li>Вопрос 1: Как зарегистрироваться</li>
+                    <li>Вопрос 2: Не приходит СМС</li>
+                    <li>Вопрос 3: Как связаться с оператором  </li>
+                </ul>
+
+                <h3>Инструкция по связи</h3>
+                <p>Для срочных вопросов используйте Telegram</p>
+            </div>
+        </section>
+    </main>
+     <script src="script99.js"></script>
+</body>
+</html>
